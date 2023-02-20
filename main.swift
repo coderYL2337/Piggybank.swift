@@ -2,6 +2,7 @@
 //Filename: Piggybank.swift
 //This program gets user input of amount of Columbia Pesos, Brazillian Reais and Peruvian Soles, do the currency conversion and output the amount of US dollars.
 import Foundation
+import Glibc
 print("Authored by: Yan Lu")
 print("------------------------")
 //Greet user 
@@ -16,7 +17,7 @@ print("")
 print("Now let's find out the value of your South American currencies in US Dollars.")
 print("")
 
-  //prompts user to enter value of Brizillian Reals,Colombian Pesos,and Peruvian Soles
+  //prompts user to enter value of Brizilian Reals,Colombian Pesos,and Peruvian Soles
     print("How much Brazilian Reals do you have?")
     let BRL = Double(readLine()!)!
     print("How much Colombian Pesos do you have?")
@@ -30,11 +31,11 @@ print("")
     let PENinUSD = PEN*PENtoUS
 // add up the value of foreign currencys in US Dollar
     let totalUSD = BRLinUSD + COPinUSD+PENinUSD
-//output value of each foreign currency in US Dollar
-     print("\(BRL) Brazillian Reais = \(BRLinUSD) US Dollars")
+//output value of each foreign currency user holds in US Dollar
+     print("\(BRL) Brazillian Reals = \(BRLinUSD) US Dollars")
      print("\(COP) Colomiban Pesos = \(COPinUSD) US Dollars")
      print("\(PEN) Peruvian Soles = \(PENinUSD) US Dollars")
-//output sum of foreign currency in US Dollar
+//output sum of foreign currency user holds in US Dollar
       print("")
       print("Sum of your Foreign currencies in US Dollars:")
       print("US Dollars = $\(totalUSD)")
